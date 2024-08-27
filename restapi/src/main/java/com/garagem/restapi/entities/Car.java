@@ -1,14 +1,36 @@
 package com.garagem.restapi.entities;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity //indica que essa classe são entidades
+
 public class Car {
+    @Id //indica que o campo abaixo é o ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //indica que o campo sera auto-incremento
     private int id;
+
+    @Column(nullable = false) //defininos que o valor não pode ser nulos
     private int fabricante;
+
+    @Column(nullable = false)
     private int cor;
+
+    @Column(nullable = false)
     private int ano;
+
+    @Column(nullable = false)
     private int opcionais;
+
+    @Column(nullable = false)
     private String cep;
+
+    @Column(nullable = false)
     private int status;
-    
+
     public int getId() {
         return id;
     }

@@ -15,7 +15,7 @@ import com.garagem.restapi.ano.database.RepositoryAno;
 import com.garagem.restapi.ano.entities.Ano;
 
 @RestController
-@RequestMapping("/ano")
+@RequestMapping("/Ano")
 public class AnoREST {
     @Autowired
     private RepositoryAno repository;

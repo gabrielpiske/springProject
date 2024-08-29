@@ -15,7 +15,7 @@ import com.garagem.restapi.cor.entities.Cor;
 import com.garagem.restapi.cor.database.RepositoryCor;
 
 @RestController
-@RequestMapping("/Cor")
+@RequestMapping("/cor")
 public class CorREST {
     @Autowired
     private RepositoryCor repository;

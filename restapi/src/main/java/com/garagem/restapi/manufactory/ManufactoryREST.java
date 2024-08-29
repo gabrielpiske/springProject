@@ -15,7 +15,7 @@ import com.garagem.restapi.manufactory.database.RepositoryManufactory;
 import com.garagem.restapi.manufactory.entities.Manufactory;
 
 @RestController
-@RequestMapping("/Manufactory")
+@RequestMapping("/manufactory")
 public class ManufactoryREST {
     @Autowired
     private RepositoryManufactory repository;

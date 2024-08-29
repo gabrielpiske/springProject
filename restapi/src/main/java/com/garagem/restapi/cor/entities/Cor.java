@@ -14,7 +14,7 @@ public class Cor {
     private int id;
 
     @Column(nullable = false)
-    private int cor;
+    private String cor;
 
     @Column(nullable = false)
     private int status;

@@ -14,10 +14,10 @@ public class Manufactory {
     private int id;
 
     @Column(nullable = false)
-    private int fabricante;
+    private String fabricante;
 
     @Column(nullable = false)
-    private int modelo;
+    private String modelo;
 
     @Column(nullable = false)
     private int status;
@@ -30,19 +30,19 @@ public class Manufactory {
         this.id = id;
     }
 
-    public int getFabricante() {
+    public String getFabricante() {
         return fabricante;
     }
 
-    public void setFabricante(int fabricante) {
+    public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
 
-    public int getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(int modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
@@ -53,6 +53,6 @@ public class Manufactory {
     public void setStatus(int status) {
         this.status = status;
     }
-
+ 
     
 }

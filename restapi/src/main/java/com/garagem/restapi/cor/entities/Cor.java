@@ -19,8 +19,6 @@ public class Cor {
     @Column(nullable = false)
     private int status;
 
-
-    
     public int getId() {
         return id;
     }
@@ -29,11 +27,11 @@ public class Cor {
         this.id = id;
     }
 
-    public int getCor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setCor(int cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
